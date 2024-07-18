@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "https://localhost:44302",
+      "applicationUrl": "http://localhost:44302",
       "sslPort": 44302
     }
   },
@@ -18,6 +18,12 @@
       }
     },
     "Identity.Admin.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:44302"
+    },
+    "Identity.Admin.Api.Development": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

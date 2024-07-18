@@ -19,6 +19,11 @@
     "Identity.Admin": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "https://localhost:44303"
+    },
+    "Identity.Admin.Development": {
+      "commandName": "Project",
+      "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
