@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Tests.Base
+namespace Identity.STS.Identity.IntegrationTests.Tests.Base
 {
     public class BaseClassFixture : IClassFixture<TestFixture>
     {

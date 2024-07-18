@@ -5,13 +5,13 @@ using FluentAssertions;
 using IdentityServer4.EntityFramework.Entities;
 using IdentityServer4.EntityFramework.Options;
 using Microsoft.EntityFrameworkCore;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
-using Skoruba.IdentityServer4.Admin.UnitTests.Mocks;
+using Identity.Admin.EntityFramework.Repositories;
+using Identity.Admin.EntityFramework.Repositories.Interfaces;
+using Identity.Admin.EntityFramework.Shared.DbContexts;
+using Identity.Admin.UnitTests.Mocks;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Repositories
+namespace Identity.Admin.UnitTests.Repositories
 {
     public class ClientRepositoryTests
     {

@@ -1,11 +1,11 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using FluentAssertions;
-using Skoruba.IdentityServer4.Admin.IntegrationTests.Tests.Base;
-using Skoruba.IdentityServer4.Admin.UI.Configuration.Constants;
+using Identity.Admin.IntegrationTests.Tests.Base;
+using Identity.Admin.UI.Configuration.Constants;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.IntegrationTests.Tests
+namespace Identity.Admin.IntegrationTests.Tests
 {
 	public class LogControllerTests : BaseClassFixture
     {

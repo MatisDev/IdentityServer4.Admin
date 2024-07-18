@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using FluentAssertions;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Mappers;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Mappers.Converters;
-using Skoruba.IdentityServer4.Admin.UnitTests.Mocks;
+using Identity.Admin.BusinessLogic.Mappers;
+using Identity.Admin.BusinessLogic.Mappers.Converters;
+using Identity.Admin.UnitTests.Mocks;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Mappers
+namespace Identity.Admin.UnitTests.Mappers
 {
     public class ClientMappers
     {

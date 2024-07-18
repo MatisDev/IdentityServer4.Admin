@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Common;
+using Identity.STS.Identity.IntegrationTests.Common;
 
-namespace Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Mocks
+namespace Identity.STS.Identity.IntegrationTests.Mocks
 {
     public static class UserMocks
     {

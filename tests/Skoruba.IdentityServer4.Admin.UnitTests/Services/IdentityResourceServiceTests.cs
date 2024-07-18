@@ -6,17 +6,17 @@ using IdentityServer4.EntityFramework.Options;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Skoruba.AuditLogging.Services;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Mappers;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Resources;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Services;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
-using Skoruba.IdentityServer4.Admin.UnitTests.Mocks;
+using Identity.Admin.BusinessLogic.Mappers;
+using Identity.Admin.BusinessLogic.Resources;
+using Identity.Admin.BusinessLogic.Services;
+using Identity.Admin.BusinessLogic.Services.Interfaces;
+using Identity.Admin.EntityFramework.Repositories;
+using Identity.Admin.EntityFramework.Repositories.Interfaces;
+using Identity.Admin.EntityFramework.Shared.DbContexts;
+using Identity.Admin.UnitTests.Mocks;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Services
+namespace Identity.Admin.UnitTests.Services
 {
 	public class IdentityResourceServiceTests
 	{

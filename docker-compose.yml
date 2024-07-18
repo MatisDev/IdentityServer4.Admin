@@ -18,11 +18,11 @@ services:
           - admin.skoruba.local
           - admin-api.skoruba.local
     restart: always
-  skoruba.identityserver4.admin:
+  Identity.admin:
     image: '${DOCKER_REGISTRY-}skoruba-identityserver4-admin'
     build:
       context: .
-      dockerfile: src/Skoruba.IdentityServer4.Admin/Dockerfile
+      dockerfile: src/Identity.Admin/Dockerfile
     container_name: skoruba-identityserver4-admin
     environment:
       - VIRTUAL_HOST=admin.skoruba.local
@@ -45,10 +45,10 @@ services:
       - 'Serilog__WriteTo__1__Args__connectionString=Server=db;Database=IdentityServer4Admin;User Id=sa;Password=${DB_PASSWORD:-Password_123};MultipleActiveResultSets=true'
       - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
-    command: dotnet Skoruba.IdentityServer4.Admin.dll /seed
+    command: dotnet Identity.Admin.dll /seed
     depends_on:
       - db
-      - skoruba.identityserver4.sts.identity
+      - Identity.sts.identity
     volumes:
       - './shared/serilog.json:/app/serilog.json'
       - './shared/identitydata.json:/app/identitydata.json'
@@ -56,11 +56,11 @@ services:
       - './shared/nginx/certs/cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt'
     networks:
       identityserverui: null
-  skoruba.identityserver4.admin.api:
+  Identity.admin.api:
     image: '${DOCKER_REGISTRY-}skoruba-identityserver4-admin-api'
     build:
       context: .
-      dockerfile: src/Skoruba.IdentityServer4.Admin.Api/Dockerfile
+      dockerfile: src/Identity.Admin.Api/Dockerfile
     container_name: skoruba-identityserver4-admin-api
     environment:
       - VIRTUAL_HOST=admin-api.skoruba.local
@@ -80,11 +80,11 @@ services:
       - './shared/nginx/certs/cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt'
     networks:
       identityserverui: null
-  skoruba.identityserver4.sts.identity:
+  Identity.sts.identity:
     image: '${DOCKER_REGISTRY-}skoruba-identityserver4-sts-identity'
     build:
       context: .
-      dockerfile: src/Skoruba.IdentityServer4.STS.Identity/Dockerfile
+      dockerfile: src/Identity.STS.Identity/Dockerfile
     container_name: skoruba-identityserver4-sts-identity
     environment:
       - VIRTUAL_HOST=sts.skoruba.local

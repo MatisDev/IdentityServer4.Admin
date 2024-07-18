@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Common
+namespace Identity.STS.Identity.IntegrationTests.Common
 {
     public static class RoutesConstants
     {

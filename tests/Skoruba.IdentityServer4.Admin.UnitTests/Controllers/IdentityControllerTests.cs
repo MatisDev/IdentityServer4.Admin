@@ -20,18 +20,18 @@ using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.AuditLogging.EntityFramework.Extensions;
 using Skoruba.AuditLogging.EntityFramework.Repositories;
 using Skoruba.AuditLogging.EntityFramework.Services;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Services.Interfaces;
-using Skoruba.IdentityServer4.Admin.UI.Areas.AdminUI.Controllers;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.Entities.Identity;
-using Skoruba.IdentityServer4.Admin.UnitTests.Mocks;
-using Skoruba.IdentityServer4.Admin.UI.Helpers;
-using Skoruba.IdentityServer4.Admin.UI.Helpers.Localization;
+using Identity.Admin.BusinessLogic.Identity.Dtos.Identity;
+using Identity.Admin.BusinessLogic.Identity.Services.Interfaces;
+using Identity.Admin.UI.Areas.AdminUI.Controllers;
+using Identity.Admin.EntityFramework.Shared.DbContexts;
+using Identity.Admin.EntityFramework.Shared.Entities.Identity;
+using Identity.Admin.UnitTests.Mocks;
+using Identity.Admin.UI.Helpers;
+using Identity.Admin.UI.Helpers.Localization;
 using Xunit;
 using System.Security.Claims;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Controllers
+namespace Identity.Admin.UnitTests.Controllers
 {
     public class IdentityControllerTests
     {

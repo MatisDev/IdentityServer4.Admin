@@ -3,10 +3,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http;
 using System.Security.Claims;
 using IdentityModel;
-using Skoruba.IdentityServer4.Admin.Api.Configuration;
-using Skoruba.IdentityServer4.Admin.Api.Middlewares;
+using Identity.Admin.Api.Configuration;
+using Identity.Admin.Api.Middlewares;
 
-namespace Skoruba.IdentityServer4.Admin.Api.IntegrationTests.Common
+namespace Identity.Admin.Api.IntegrationTests.Common
 {
     public static class HttpClientExtensions
     {

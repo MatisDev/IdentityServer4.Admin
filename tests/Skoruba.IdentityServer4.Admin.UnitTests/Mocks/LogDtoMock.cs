@@ -1,7 +1,7 @@
 ﻿using Bogus;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Log;
+using Identity.Admin.BusinessLogic.Dtos.Log;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Mocks
+namespace Identity.Admin.UnitTests.Mocks
 {
     public class LogDtoMock
     {

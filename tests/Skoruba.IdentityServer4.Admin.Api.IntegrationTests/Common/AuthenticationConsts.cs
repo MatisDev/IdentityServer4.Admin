@@ -1,4 +1,4 @@
-﻿namespace Skoruba.IdentityServer4.Admin.Api.IntegrationTests.Common
+﻿namespace Identity.Admin.Api.IntegrationTests.Common
 {
     public class AuthenticationConsts
     {

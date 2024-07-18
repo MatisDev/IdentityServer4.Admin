@@ -3,9 +3,9 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
-using Skoruba.IdentityServer4.Admin.Api.Configuration.Test;
+using Identity.Admin.Api.Configuration.Test;
 
-namespace Skoruba.IdentityServer4.Admin.Api.IntegrationTests.Tests.Base
+namespace Identity.Admin.Api.IntegrationTests.Tests.Base
 {
     public class TestFixture : IDisposable
     {

@@ -9,19 +9,19 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Skoruba.AuditLogging.Services;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Mappers;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Resources;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Services;
-using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Services.Interfaces;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Identity.Repositories;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Identity.Repositories.Interfaces;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
-using Skoruba.IdentityServer4.Admin.EntityFramework.Shared.Entities.Identity;
-using Skoruba.IdentityServer4.Admin.UnitTests.Mocks;
+using Identity.Admin.BusinessLogic.Identity.Dtos.Identity;
+using Identity.Admin.BusinessLogic.Identity.Mappers;
+using Identity.Admin.BusinessLogic.Identity.Resources;
+using Identity.Admin.BusinessLogic.Identity.Services;
+using Identity.Admin.BusinessLogic.Identity.Services.Interfaces;
+using Identity.Admin.EntityFramework.Identity.Repositories;
+using Identity.Admin.EntityFramework.Identity.Repositories.Interfaces;
+using Identity.Admin.EntityFramework.Shared.DbContexts;
+using Identity.Admin.EntityFramework.Shared.Entities.Identity;
+using Identity.Admin.UnitTests.Mocks;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Services
+namespace Identity.Admin.UnitTests.Services
 {
     public class IdentityServiceTests
     {

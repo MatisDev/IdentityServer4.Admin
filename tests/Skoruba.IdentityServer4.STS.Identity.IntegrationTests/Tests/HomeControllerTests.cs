@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using FluentAssertions;
-using Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Tests.Base;
+using Identity.STS.Identity.IntegrationTests.Tests.Base;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.STS.Identity.IntegrationTests.Tests
+namespace Identity.STS.Identity.IntegrationTests.Tests
 {
     public class HomeControllerTests : BaseClassFixture
     {

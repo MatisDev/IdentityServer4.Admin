@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Localization;
 using Moq;
-using Skoruba.IdentityServer4.Admin.UI.Helpers.Identity;
+using Identity.Admin.UI.Helpers.Identity;
 using System.ComponentModel.Design;
 using System.Linq;
 using Xunit;
 
-namespace Skoruba.IdentityServer4.Admin.UnitTests.Helpers
+namespace Identity.Admin.UnitTests.Helpers
 {
     public class IdentityErrorDescriberTests
     {
