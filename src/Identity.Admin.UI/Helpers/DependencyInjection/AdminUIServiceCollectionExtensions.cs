@@ -18,7 +18,7 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class AdminUIServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds the Skoruba IdentityServer4 Admin UI with the default entity model.
+        /// Adds the Identity Server Admin UI with the default entity model.
         /// </summary>
         /// <param name="services"></param>
         /// <param name="optionsAction"></param>
@@ -39,7 +39,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 UserChangePasswordDto<string>, RoleClaimsDto<RoleClaimDto<string>, string>, UserClaimDto<string>, RoleClaimDto<string>>(services, optionsAction);
 
         /// <summary>
-        /// Adds the Skoruba IdentityServer4 Admin UI with a custom user model and database context.
+        /// Adds the Identity Server Admin UI with a custom user model and database context.
         /// </summary>
         /// <typeparam name="TIdentityDbContext"></typeparam>
         /// <typeparam name="TUser"></typeparam>
@@ -64,7 +64,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 UserChangePasswordDto<string>, RoleClaimsDto<RoleClaimDto<string>, string>, UserClaimDto<string>, RoleClaimDto<string>>(services, optionsAction);
 
         /// <summary>
-        /// Adds the Skoruba IdentityServer4 Admin UI with a fully custom entity model and database contexts.
+        /// Adds the Identity Server Admin UI with a fully custom entity model and database contexts.
         /// </summary>
         /// <param name="services"></param>
         /// <param name="optionsAction"></param>

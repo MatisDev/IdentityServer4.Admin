@@ -14,7 +14,7 @@ namespace Microsoft.AspNetCore.Builder
     public static class AdminUIApplicationBuilderExtensions
     {
         /// <summary>
-        /// Adds the Skoruba IdentityServer4 Admin UI to the pipeline of this application. This method must be called 
+        /// Adds the Identity Server Admin UI to the pipeline of this application. This method must be called 
         /// between UseRouting() and UseEndpoints().
         /// </summary>
         /// <param name="app"></param>
@@ -27,7 +27,7 @@ namespace Microsoft.AspNetCore.Builder
         }
 
         /// <summary>
-        /// Maps the Skoruba IdentityServer4 Admin UI to the routes of this application.
+        /// Maps the Identity Server Admin UI to the routes of this application.
         /// </summary>
         /// <param name="endpoint"></param>
         /// <param name="patternPrefix"></param>
@@ -37,7 +37,7 @@ namespace Microsoft.AspNetCore.Builder
         }
 
         /// <summary>
-        /// Maps the Skoruba IdentityServer4 Admin UI health checks to the routes of this application.
+        /// Maps the Identity Server Admin UI health checks to the routes of this application.
         /// </summary>
         /// <param name="endpoint"></param>
         /// <param name="pattern"></param>
