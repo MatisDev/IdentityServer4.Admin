@@ -84,7 +84,7 @@
       {
         "ClientId": "identity_admin_client",
         "ClientName": "identity_admin_client",
-        "ClientUri": "https://localhost:8101",
+        "ClientUri": "https://identityadmindev.justarandomvideo.com",
         "AllowedGrantTypes": [
           "authorization_code"
         ],
@@ -95,14 +95,14 @@
           }
         ],
         "RedirectUris": [
-          "https://localhost:8101/signin-oidc"
+          "https://identityadmindev.justarandomvideo.com/signin-oidc"
         ],
-        "FrontChannelLogoutUri": "https://localhost:8101/signout-oidc",
+        "FrontChannelLogoutUri": "https://identityadmindev.justarandomvideo.com/signout-oidc",
         "PostLogoutRedirectUris": [
-          "https://localhost:8101/signout-callback-oidc"
+          "https://identityadmindev.justarandomvideo.com/signout-callback-oidc"
         ],
         "AllowedCorsOrigins": [
-          "https://localhost:8101"
+          "https://identityadmindev.justarandomvideo.com"
         ],
         "AllowedScopes": [
           "openid",
@@ -120,13 +120,13 @@
         "RequireClientSecret": false,
         "RequirePkce": true,
         "RedirectUris": [
-          "https://localhost:8102/swagger/oauth2-redirect.html"
+          "https://identityapidev.justarandomvideo.com/swagger/oauth2-redirect.html"
         ],
         "AllowedScopes": [
           "identity_admin_api"
         ],
         "AllowedCorsOrigins": [
-          "https://localhost:8102"
+          "https://identityapidev.justarandomvideo.com"
         ]
       }
     ]
