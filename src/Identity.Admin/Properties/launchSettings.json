@@ -23,6 +23,7 @@
     },
     "Identity.Admin.Development": {
       "commandName": "Project",
+      "commandLineArgs": "/seed",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
