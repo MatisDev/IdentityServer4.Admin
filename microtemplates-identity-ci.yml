@@ -1,0 +1,94 @@
+trigger:
+- main
+- develop
+- staging
+
+pool:
+  vmImage: ubuntu-22.04
+
+variables:
+  - name: projectName
+    value: ''
+  - name: repositoryName
+    value: ''
+  - name: branchName
+    value: ''
+  - name: imageTag
+    value: ''
+  - name: imageTagAdmin
+    value: ''
+  - name: imageTagSts
+    value: ''
+  - name: buildConfig
+    value: 'Release'
+
+jobs:
+- job: GetInfoAndPushImage
+  displayName: 'Get Project, Repository, and Branch Info. Push to docker hub.'
+  steps:
+  - checkout: self
+    persistCredentials: true
+    submodules: recursive
+
+  - powershell: |
+      # Obtener el nombre del proyecto desde la variable de entorno SYSTEM_TEAMPROJECT
+      $env:projectName = $env:SYSTEM_TEAMPROJECT
+      Write-Host "Project Name: $($env:projectName)"
+      
+      # Obtener el nombre del repositorio desde la variable de entorno BUILD_REPOSITORY_NAME
+      $env:repositoryName = $env:BUILD_REPOSITORY_NAME
+      Write-Host "Repository Name: $($env:repositoryName)"
+      
+      # Obtener el nombre de la rama desde la variable de entorno BUILD_SOURCEBRANCH
+      $env:branchName = $env:BUILD_SOURCEBRANCH -replace 'refs/heads/', ''
+      Write-Host "Branch Name: $($env:branchName)"
+      
+      # Concatenar los valores en una sola variable
+      $env:imageTagAdmin = "$env:projectName.$env:repositoryName.Admin.$env:branchName"
+      Write-Host "Image Tag Admin (Before Lowercase): $($env:imageTagAdmin)"
+      
+      # Convertir a minúsculas
+      $env:imageTagAdmin = $env:imageTagAdmin.ToLower()
+      Write-Host "Image Tag Admin (After Lowercase): $($env:imageTagAdmin)"
+      Write-Host "##vso[task.setvariable variable=imageTagAdmin;isOutput=true]$($env:imageTagAdmin)"
+      
+      # Concatenar los valores en una sola variable
+      $env:imageTagSts = "$env:projectName.$env:repositoryName.Sts.$env:branchName"
+      Write-Host "Image Tag Sts (Before Lowercase): $($env:imageTagSts)"
+      
+      # Convertir a minúsculas
+      $env:imageTagSts = $env:imageTagSts.ToLower()
+      Write-Host "Image Tag Sts (After Lowercase): $($env:imageTagSts)"
+      Write-Host "##vso[task.setvariable variable=imageTagSts;isOutput=true]$($env:imageTagSts)"
+      
+      # Configuración de buildConfig dependiendo de la rama
+      if ($env:BUILD_SOURCEBRANCH -eq 'refs/heads/develop' -or $env:BUILD_SOURCEBRANCH -eq 'refs/heads/staging') {
+        $env:buildConfig = 'Debug'
+      } else {
+        $env:buildConfig = 'Release'
+      }
+      Write-Host "Build Config: $($env:buildConfig)"
+      Write-Host "##vso[task.setvariable variable=buildConfig;isOutput=true]$($env:buildConfig)"
+    
+    displayName: 'Set Variables'
+    name: 'SetVariables'
+
+  - task: Docker@2
+    inputs:
+      containerRegistry: 'autonomo-dockerhub'
+      repository: 'autonomo/builds'
+      command: 'buildAndPush'
+      Dockerfile: 'src/Identity.Admin/Dockerfile'
+      buildContext: 
+      tags: '$(SetVariables.imageTagAdmin)'
+    displayName: 'Build And Push Image Admin'
+
+  - task: Docker@2
+    inputs:
+      containerRegistry: 'autonomo-dockerhub'
+      repository: 'autonomo/builds'
+      command: 'buildAndPush'
+      Dockerfile: 'src/Identity.STS.Identity/Dockerfile'
+      buildContext: 
+      tags: '$(SetVariables.imageTagSts)'
+    displayName: 'Build And Push Image Sts'

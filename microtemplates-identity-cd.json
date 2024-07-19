@@ -1,0 +1,791 @@
+{
+  "source": 2,
+  "revision": 16,
+  "description": null,
+  "createdBy": {
+    "displayName": "Matías Argüello",
+    "url": "https://spsprodcus3.vssps.visualstudio.com/Aeb041521-d54c-4159-adc1-137746a762b6/_apis/Identities/b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+      }
+    },
+    "id": "b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+    "uniqueName": "marguello@procesoautonomo.com",
+    "imageUrl": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz",
+    "descriptor": "aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+  },
+  "createdOn": "2023-07-10T20:58:52.183Z",
+  "modifiedBy": {
+    "displayName": "Matías Argüello",
+    "url": "https://spsprodcus3.vssps.visualstudio.com/Aeb041521-d54c-4159-adc1-137746a762b6/_apis/Identities/b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+      }
+    },
+    "id": "b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+    "uniqueName": "marguello@procesoautonomo.com",
+    "imageUrl": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz",
+    "descriptor": "aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+  },
+  "modifiedOn": "2024-07-19T16:16:12.870Z",
+  "isDeleted": false,
+  "isDisabled": false,
+  "lastRelease": {
+    "id": 34,
+    "name": "Release-12",
+    "artifacts": [
+    ],
+    "_links": {
+    },
+    "description": "Triggered by autonomo-microtemplates-identity-dev-ci 20230723.2.",
+    "releaseDefinition": {
+      "id": 1,
+      "projectReference": null,
+      "_links": {
+      }
+    },
+    "createdOn": "2023-07-23T19:36:28.347Z",
+    "createdBy": {
+      "displayName": "Matías Argüello",
+      "url": "https://spsprodcus3.vssps.visualstudio.com/Aeb041521-d54c-4159-adc1-137746a762b6/_apis/Identities/b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+        }
+      },
+      "id": "b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+      "uniqueName": "marguello@procesoautonomo.com",
+      "imageUrl": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz",
+      "descriptor": "aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+    }
+  },
+  "variables": {
+  },
+  "variableGroups": [
+  ],
+  "environments": [
+    {
+      "id": 1,
+      "name": "identityadmin.dev",
+      "rank": 1,
+      "owner": {
+        "displayName": "Matías Argüello",
+        "url": "https://spsprodcus3.vssps.visualstudio.com/Aeb041521-d54c-4159-adc1-137746a762b6/_apis/Identities/b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+          }
+        },
+        "id": "b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+        "uniqueName": "marguello@procesoautonomo.com",
+        "imageUrl": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz",
+        "descriptor": "aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 1
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 2
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 3
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "healthPercent": 0,
+            "deploymentHealthOption": "Custom",
+            "tags": [
+            ],
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 148,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 4,
+          "name": "Deployment group job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Login Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker login --username autonomo --password Matis6284",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Stop Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker stop microtemplates.identityadmin.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Remove Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker rm microtemplates.identityadmin.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Prune Image Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker image prune -f",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Pull Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker pull autonomo/builds:microtemplates.identityadmin.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Run Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker run -d -p 8084:80 --name microtemplates.identityadmin.dev autonomo/builds:microtemplates.identityadmin.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": "",
+          "result": null
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 34,
+        "url": "https://vsrm.dev.azure.com/procesoautonomo/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/_apis/Release/releases/34",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://vsrm.dev.azure.com/procesoautonomo/_apis/public/Release/badge/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/1/1"
+    },
+    {
+      "id": 2,
+      "name": "sts.dev",
+      "rank": 2,
+      "owner": {
+        "displayName": "Matías Argüello",
+        "url": "https://spsprodcus3.vssps.visualstudio.com/Aeb041521-d54c-4159-adc1-137746a762b6/_apis/Identities/b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+          }
+        },
+        "id": "b049ab24-1b3d-62d9-820a-c0ac9bc6b053",
+        "uniqueName": "marguello@procesoautonomo.com",
+        "imageUrl": "https://dev.azure.com/procesoautonomo/_apis/GraphProfile/MemberAvatars/aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz",
+        "descriptor": "aad.YjA0OWFiMjQtMWIzZC03MmQ5LTgyMGEtYzBhYzliYzZiMDUz"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 4
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 5
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 6
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "healthPercent": 0,
+            "deploymentHealthOption": "Custom",
+            "tags": [
+            ],
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 148,
+            "demands": [
+            ],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 4,
+          "name": "Deployment group job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Login Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker login --username autonomo --password Matis6284",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Stop Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker stop microtemplates.sts.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Remove Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker rm microtemplates.sts.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Prune Image Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker image prune -f",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Pull Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker pull autonomo/builds:microtemplates.sts.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+              "version": "3.*",
+              "name": "Run Docker",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "sudo docker run -d -p 8083:80 --name microtemplates.sts.dev autonomo/builds:microtemplates.sts.dev",
+                "workingDirectory": "",
+                "failOnStderr": "false",
+                "bashEnvValue": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+        {
+          "name": "identityadmin.dev",
+          "conditionType": 2,
+          "value": "132",
+          "result": null
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 34,
+        "url": "https://vsrm.dev.azure.com/procesoautonomo/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/_apis/Release/releases/34",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://vsrm.dev.azure.com/procesoautonomo/_apis/public/Release/badge/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/1/2"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "b261bcfc-c590-4e74-abbc-3f3d18a5f8cd:22",
+      "type": "Build",
+      "alias": "_IdentityService",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://dev.azure.com/procesoautonomo/_permalink/_build/index?collectionId=924d9cd2-f8d5-45ea-b52f-73cb1b125a67&projectId=b261bcfc-c590-4e74-abbc-3f3d18a5f8cd&definitionId=22",
+          "name": ""
+        },
+        "defaultVersionBranch": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionSpecific": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionTags": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionType": {
+          "id": "latestType",
+          "name": "Latest"
+        },
+        "definition": {
+          "id": "22",
+          "name": "IdentityService"
+        },
+        "definitions": {
+          "id": "",
+          "name": ""
+        },
+        "IsMultiDefinitionType": {
+          "id": "False",
+          "name": "False"
+        },
+        "project": {
+          "id": "b261bcfc-c590-4e74-abbc-3f3d18a5f8cd",
+          "name": "MicroTemplates"
+        },
+        "repository": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [
+    {
+      "artifactAlias": "_IdentityService",
+      "triggerConditions": [
+        {
+          "sourceBranch": "develop",
+          "tags": [
+          ],
+          "tagFilter": null,
+          "useBuildDefinitionBranch": false,
+          "createReleaseOnBuildTagging": false
+        }
+      ],
+      "triggerType": 1
+    }
+  ],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [
+  ],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    }
+  },
+  "id": 1,
+  "name": "microtemplates-identity-cd",
+  "path": "\\",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/procesoautonomo/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/_apis/Release/definitions/1",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/procesoautonomo/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/_apis/Release/definitions/1"
+    },
+    "web": {
+      "href": "https://dev.azure.com/procesoautonomo/b261bcfc-c590-4e74-abbc-3f3d18a5f8cd/_release?definitionId=1"
+    }
+  }
+}
